@@ -105,7 +105,7 @@ Include ('php/functions.php');
 			<div id="subside">
 				<?php content('subside',$c['subside']); ?>
 			</div>
-			<form class="form" action="mailto:<?php echo $c["adminEmail"]; ?>">
+			<form class="form" id="contactForm" action="POST">
 				<fieldset>
 					<!-- Text input-->
 					<div class="form-group">
@@ -155,6 +155,11 @@ Include ('php/functions.php');
 <?php addSettings($c); ?>
 <script>
 	$().ready(function(){pageLoad('<?php echo $c['page']; ?>');});
+	$('#contactSubmit').click(function(e){
+		e.preventDefault(); 
+		submitContactForm('<?php echo $c['adminEmail']; ?>',
+			'<?php echo $themePath."/php/contact_me.php" ?>');
+		});
 </script>
 
 </body>

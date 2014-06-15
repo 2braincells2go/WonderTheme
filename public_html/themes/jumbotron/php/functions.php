@@ -25,7 +25,6 @@ function menuItem($itemNumber){
 	echo ucwords( str_replace('-',' ',$page) );
 }
 
-
 function menuItemUrl($itemNumber){
 	global $c,$hostname;
 	$i = $itemNumber;

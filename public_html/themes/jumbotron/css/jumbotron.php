@@ -35,6 +35,16 @@ body {
 	line-height: 150%;
 }
 
+/********************
+	Response Messages
+*********************/
+.error {
+	color: red;
+}
+
+.success {
+	color: green;
+}
 
 /********
 	Navbar
