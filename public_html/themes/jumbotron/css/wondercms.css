@@ -1,0 +1,57 @@
+.clear {clear: both;}
+*:focus {outline: none;}
+.toggle {cursor: pointer;}
+
+span.editText {
+	display: block;
+	cursor: pointer;
+}
+
+span.editText textarea {
+	border: 0;
+	padding: 0;
+	width: 100%;
+	resize: none;
+	color: inherit;
+	display: block;
+	overflow: hidden;
+	font-size: inherit;
+	line-height: inherit;
+	font-family: inherit;
+	background-color: transparent;
+}
+
+
+.change {
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	margin-top: 5px;
+	background: #1F2B33;
+}
+
+.change select {
+	width: 20%;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	font-weight: bold;
+	background: #16a6b6;
+}
+
+.settings {
+	width: 100%;
+	clear: both;
+	color: #fff;
+	height: auto;
+	padding: 5px 0;
+	text-align: center;
+	background: #16a6b6;
+	overflow: scroll;
+}
+
+div.settings div.change {
+	width: 52%;
+	text-align: left;
+	margin-left: 10%;
+}
