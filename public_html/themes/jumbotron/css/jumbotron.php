@@ -24,7 +24,9 @@ body {
 }
 
 .contentarea {
-	margin-top: 40px;
+	margin: 0;
+	padding: 20px;
+	background: rgba(255,255,255,1.0);
 }
 
 /********************
@@ -87,7 +89,7 @@ body {
 
 .jumbotron {
 	position: relative;
-	background: black; 
+	background: none; 
 	width: 100%;
 	height: 300px;
 	margin-bottom: 0;	
@@ -176,8 +178,7 @@ body {
 footer {
 	width: 100%;
 	background: steelblue;
-	margin-bottom: 0;
-	margin-top: 20px;
+	margin: 0;
 	padding: 10px auto;
 }
 

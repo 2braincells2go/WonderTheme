@@ -32,24 +32,20 @@ Include ('php/functions.php');
 .jumbotron {
 	background: url('<?php echo $coverPath."cv_".$c['page'].".jpg"; ?>'); 
 	<?php if($c['page']=='home') { ?>
-	background-position: center -20px;
 	height: 575px;
 	<?php } else { ?>
-	background-position: center -150px;
 	<?php }; ?>
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-attachment: fixed;
 }
 
 /* Medium Devices, Desktops */
 	@media only screen and (min-width : 768px) {
 	.jumbotron {
-		background-position: center -500px;
+		//background-position: center ;
 	}		
 }
-
-
 </style>
 
 </head>
@@ -145,10 +141,6 @@ Include ('php/functions.php');
 			</form>
 		</div>
 	</div>	
-		
-	<div class="clearfix">
-		&nbsp;
-	</div>
 
 	<div id="footer">
 		<footer>
@@ -167,7 +159,20 @@ Include ('php/functions.php');
 
 <?php addSettings($c); ?>
 <script>
-	$().ready(function(){pageLoad('<?php echo $c['page']; ?>');});
+	// Run init functions after page has loaded
+	var pageName = <?php echo $c['page']; ?>;
+	$().ready(function(){pageLoad(pageName);});
+	
+	
+	// Dynamically change background position to correctly fill jumbotron
+	if (pageName = 'home') {
+		var margin = $(window).height() * 0.3;	
+	} else {
+		var margin = $(window).height() * 0.6;
+	};	
+	$('.jumbotron').css('background-position','center -' +  margin + 'px');
+
+	// Button handlers
 	$('#contactSubmit').click(function(e){
 		e.preventDefault(); 
 		submitContactForm('<?php echo $c['adminEmail']; ?>',
