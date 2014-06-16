@@ -2,18 +2,6 @@
 Include ('css.php');
 ?>
 
-/********************
-	Homepage Settings
-*********************/
-
-#homePanel { 
-	display: none;
-}
-
-#jumbotron-content {
-	display: none;
-}
-
 /****************
 	Core elements
 *****************/
@@ -33,6 +21,10 @@ body {
 #main-content {
 	font-size: 125%;
 	line-height: 150%;
+}
+
+.contentarea {
+	margin-top: 40px;
 }
 
 /********************
@@ -60,21 +52,34 @@ body {
 	text-transform: capitalize;
 }
 
+.navbar-brand {
+}
+
 .navbar-brand h1 {
-	font-size: 1.5em;
 	display: inline;
-	clear: none;
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 150%;
 	color: rgb(255,255,255);
 }
 
 .navbar-brand h2 {
-	font-size: 1.2em;
+	display: none;
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 130%;
 	font-style: italic;
-	display: inline;
-	clear: none;
 	margin-left: 15px;
 	color: rgb(255,255,255);
 }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 768px) {
+	.navbar-brand h2 {
+		display: inline;
+	}
+}
+
 
 /***********
 	Jumbotron
@@ -84,14 +89,35 @@ body {
 	position: relative;
 	background: black; 
 	width: 100%;
-	height: 500px;
+	height: 300px;
+	margin-bottom: 0;	
 }
 
 #jumbotron-content {
+	display: none;
 	background: rgba(0,0,0,0.5);
-	margin-top: 100px;
+	margin-top: 40px;
 	color: white;
 	border: none;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 768px) {
+	.jumbotron {
+		height: 500px;
+	}
+	#jumbotron-content {
+		margin-top: 100px;
+	}
+}
+
+/********************
+	Homepanel Settings
+*********************/
+
+#homePanel { 
+	display: none;
+	background: antiquewhite;
 }
 
 /*********
@@ -103,6 +129,8 @@ body {
 	min-height: 200px;
 	text-align: center;
 	padding: 0;
+	margin-top: 40px;
+	margin-bottom: -20px;
 }
 
 .navbox img {
@@ -124,8 +152,21 @@ body {
 	Sidebar
 ***********/
 
+.sidebar {
+	margin-top: 20px;
+}
+
 .sidebar form {
 	margin-top: 20px;
+}
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 768px) {
+	.sidebar {
+		margin-top: 0;
+	}
 }
 
 /*********
@@ -158,4 +199,11 @@ footer a {
 
 footer a:hover {
 	color: white;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 768px) {
+	.footer-right {
+		text-align: right;
+	}		
 }

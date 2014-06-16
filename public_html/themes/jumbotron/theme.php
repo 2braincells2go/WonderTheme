@@ -31,11 +31,24 @@ Include ('php/functions.php');
 <style>
 .jumbotron {
 	background: url('<?php echo $coverPath."cv_".$c['page'].".jpg"; ?>'); 
-	background-position: center -400px;
+	<?php if($c['page']=='home') { ?>
+	background-position: center -20px;
+	height: 575px;
+	<?php } else { ?>
+	background-position: center -150px;
+	<?php }; ?>
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	background-attachment: fixed;
 }
+
+/* Medium Devices, Desktops */
+	@media only screen and (min-width : 768px) {
+	.jumbotron {
+		background-position: center -500px;
+	}		
+}
+
 
 </style>
 
@@ -54,8 +67,8 @@ Include ('php/functions.php');
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/">
-					<h1><?php echo $c['title'];?></h1>
+				<a class="navbar-brand" href="./">
+					<h1><?php echo $c['title']; ?></h1>
 					<h2><?php echo $c['description']; ?></h2>
 				</a>
 				<div class="navbar-collapse collapse">
@@ -71,12 +84,12 @@ Include ('php/functions.php');
 	</div>
 	<!-- Main jumbotron for a primary marketing message or call to action -->	
 		<div class="jumbotron">
-			<div class="container well" id="jumbotron-content">
+			<div class="well" id="jumbotron-content">
 				<?php content('jumbotron',$c['jumbotron']);?>
 			</div>
 		</div>
 	
-	<div id="homePanel">
+	<div id="homePanel" class="container-fluid">
 		<a href="<?php menuItemUrl(1);?>">
 			<div class="col-md-2 col-md-offset-2 navbox navbox1" id="navbox1">
 				<img class="img-responsive" src="<?php echo $tnPath."tn_"; menuItemSlug(1);?>.jpg" />
@@ -97,7 +110,7 @@ Include ('php/functions.php');
 		</a>
 	</div>
 	
-	<div class="container col-md-12">
+	<div class="container-fluid contentarea">
 		<div class="col-md-5 col-md-offset-2" id="main-content">
 			<?php content($c['page'],$c['content']);?>
 		</div>
@@ -140,11 +153,11 @@ Include ('php/functions.php');
 	<div id="footer">
 		<footer>
 			<div class="container-fluid">
-				<ul class="col-md-offset-1 col-md-2">
+				<ul class="col-md-offset-1 col-md-2 footer-left">
 					<li><?php echo "$lstatus"; ?></li>
 					<li><?php echo $c['copyright'];?></li>
 				</ul>
-				<ul class="col-md-offset-5 col-md-3 text-right">
+				<ul class="col-md-offset-5 col-md-3 footer-right">
 					<li><?php echo "$sig"; ?></li>
 					<li>Theme by <a href="http://cristoslc.com" target="_blank">Cristos L-C</a></li>
 				</ul>
