@@ -1,5 +1,5 @@
 <?php
-$themePath = "/themes/".$c['themeSelect']."/";
+$themePath = "themes/".$c['themeSelect']."/";
 $coverPath = $themePath."images/covers/";
 $tnPath = $themePath."images/thumbnails/";
 

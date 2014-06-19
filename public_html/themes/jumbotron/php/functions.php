@@ -37,7 +37,7 @@ function addSettings($c) {
 	if ( is_loggedin() ) {
 		$html = "<div class=\\\"change border\\\"><p><strong>Contact Email Address</strong></p><div id=\\\"settingsEmail\\\"></div></div>";
 		$emailContentArea = content( "adminEmail", $c["adminEmail"]);
-		//Render the editable region for Email -- the javascript will move it to the appropriate location in the DOM
+		//Render the editable region for Email -- a javascript function will later move it to the appropriate location in the DOM
 		echo $emailContentArea;
 		echo "<script>addSettings('".$html."');</script>";
 	};
