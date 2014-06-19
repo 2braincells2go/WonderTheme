@@ -1,7 +1,3 @@
-<?php
-Include ('css.php');
-?>
-
 .navbar-brand {
 	display: none;
 }

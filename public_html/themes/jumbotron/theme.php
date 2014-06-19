@@ -16,13 +16,13 @@ Include ('php/functions.php');
 	echo "	<meta charset='utf-8'>
 	<title>".$c['title']." - ".ucwords(str_replace('-',' ',$c['page']))."</title>
 	<base href='$hostname'>
-	<script src='".$themePath."/js/jquery-1.11.1.min.js'></script>
-	<script src='".$themePath."/js/bootstrap.js'></script>
-	<script src='".$themePath."/js/jumbotron.js'></script>
-	<link rel='stylesheet' href='".$themePath."/css/wondercms.css'>
-	<link rel='stylesheet' href='".$themePath."/css/bootstrap.css'>
-	<link rel='stylesheet' href='".$themePath."/css/jumbotron.php'>
-	<link rel='stylesheet' href='".$themePath."/css/".$c['page'].".php'>
+	<script src='".$themePath."js/jquery-1.11.1.min.js'></script>
+	<script src='".$themePath."js/bootstrap.js'></script>
+	<script src='".$themePath."js/jumbotron.js'></script>
+	<link rel='stylesheet' href='".$themePath."css/wondercms.css'>
+	<link rel='stylesheet' href='".$themePath."css/bootstrap.css'>
+	<link rel='stylesheet' href='".$themePath."css/jumbotron.css'>
+	<link rel='stylesheet' href='".$themePath."css/".$c['page'].".css'>
 	<meta name='description' content='".$c['description']."'>
 	<meta name='keywords' content='".$c['keywords']."'>";
 	editTags();
@@ -157,20 +157,15 @@ Include ('php/functions.php');
 		</footer>
 	</div>
 
+<!-- Add new settings box for email address -->
 <?php addSettings($c); ?>
+
 <script>
 	// Run init functions after page has loaded
-	var pageName = <?php echo $c['page']; ?>;
-	$().ready(function(){pageLoad(pageName);});
+	var pageName = '<?php echo $c['page']; ?>';
+	$().ready(function(){pageLoad('<?php echo $c['page']; ?>');});
 	
 	
-	// Dynamically change background position to correctly fill jumbotron
-	if (pageName = 'home') {
-		var margin = $(window).height() * 0.3;	
-	} else {
-		var margin = $(window).height() * 0.6;
-	};	
-	$('.jumbotron').css('background-position','center -' +  margin + 'px');
 
 	// Button handlers
 	$('#contactSubmit').click(function(e){
