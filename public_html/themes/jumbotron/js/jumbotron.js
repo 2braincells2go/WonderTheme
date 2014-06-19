@@ -16,7 +16,6 @@ function fixSettingsDisplay() {
 	var $settingsBox = $('div.settings div.hide');
 	if ( $settingsBox.length ) {
 		$('#navbar').removeClass('navbar-fixed-top');
-		$('.jumbotron').css('background-position','center bottom');
 	}
 }
 

@@ -22,6 +22,7 @@ Include ('php/functions.php');
 	<link rel='stylesheet' href='".$themePath."css/wondercms.css'>
 	<link rel='stylesheet' href='".$themePath."css/bootstrap.css'>
 	<link rel='stylesheet' href='".$themePath."css/jumbotron.css'>
+	<link rel='stylesheet' href='".$themePath."css/your-site-overrides.css'>
 	<link rel='stylesheet' href='".$themePath."css/".$c['page'].".css'>
 	<meta name='description' content='".$c['description']."'>
 	<meta name='keywords' content='".$c['keywords']."'>";
