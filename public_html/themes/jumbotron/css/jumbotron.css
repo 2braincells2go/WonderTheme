@@ -73,7 +73,7 @@ body {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 1024px) {
 	.navbar-brand h2 {
 		display: inline;
 	}
@@ -117,6 +117,10 @@ body {
 #homePanel { 
 	display: none;
 	background: antiquewhite;
+}
+
+#homePanel img {
+	border-radius: 3px;	
 }
 
 /*********

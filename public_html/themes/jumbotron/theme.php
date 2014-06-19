@@ -28,16 +28,18 @@ Include ('php/functions.php');
 	editTags();
 ?>
 
+<!-- Moved jumbotron background out of CSS sheets so that it can pull up a different image for each page. -->
 <style>
 .jumbotron {
 	background: url('<?php echo $coverPath."cv_".$c['page'].".jpg"; ?>'); 
 	<?php if($c['page']=='home') { ?>
-	height: 575px;
+			height: 575px;
 	<?php } else { ?>
 	<?php }; ?>
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	background-position: center bottom;
+	//background-attachment: fixed;
 }
 
 /* Medium Devices, Desktops */
