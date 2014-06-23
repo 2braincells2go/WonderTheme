@@ -8,4 +8,4 @@ If you are installing `jumbotron.zip` into your own WonderCMS installation (not 
 
     include ('themes/jumbotron/default-content.php');
 
-If you have any trouble, please open an issue on the github repo at https://github.com/cristoslc/WonderCMS-Jumbotron/issues
+If you have any trouble, please open an issue on the github repo at https://github.com/cristoslc/Wondertron/issues
