@@ -21,7 +21,7 @@ Include ('php/functions.php');
 	<script src='".$themePath."js/jumbotron.js'></script>
 	<link rel='stylesheet' href='".$themePath."css/wondercms.css'>
 	<link rel='stylesheet' href='".$themePath."css/bootstrap.css'>
-	<link rel='stylesheet' href='".$themePath."css/jumbotron.css'>
+	<link rel='stylesheet' href='".$themePath."css/wondertron.css'>
 	<link rel='stylesheet' href='".$themePath."css/your-site-overrides.css'>
 	<link rel='stylesheet' href='".$themePath."css/".$c['page'].".css'>
 	<meta name='description' content='".$c['description']."'>

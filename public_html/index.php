@@ -21,6 +21,13 @@ $c['copyright'] = '&copy;'. date('Y') .' Your website';
 $sig = "Powered by <a href='http://wondercms.com'>WonderCMS</a>";
 $hook['admin-richText'] = "rte.php";
 
+# Load default content for theme, if any
+$themeContent = 'themes/wondertron/default-content.php';
+if (file_exists($themeContent)) {
+	include ($themeContent);
+}
+
+
 foreach($c as $key => $val){
 	if($key == 'content')continue;
 	$fval = @file_get_contents('files/'.$key);
@@ -64,10 +71,12 @@ foreach($c as $key => $val){
 loadPlugins();
 
 # Load default content for theme, if any
+/*
 $themeContent = 'themes/'.$c['themeSelect'].'/default-content.php';
 if (file_exists($themeContent)) {
 	include ($themeContent);
 }
+*/
 
 require("themes/".$c['themeSelect']."/theme.php");
 

@@ -100,6 +100,11 @@ body {
 	border: none;
 }
 
+#jumbotron-content a {
+	color: white;
+	text-decoration: underline;
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 768px) {
 	.jumbotron {
