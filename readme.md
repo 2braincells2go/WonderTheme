@@ -2,7 +2,10 @@
 
 Wondertron is a theme for [WonderCMS](http://www.wondercms.com) based on [Bootstrap 3](http://getbootstrap.com). It includes additional features, such as an AJAX contact form.
 
-# Readme
+#Demo
+Live demo is available at [http://cristoslc.com/portfolio/wondertron/public_html/](http://cristoslc.com/portfolio/wondertron/public_html/).
+
+#Readme
 
 To install this theme, just unzip `wondertron.zip` into your "themes" folder in WonderCMS. (It should automatically expand into a folder called 'wondertron').
 
