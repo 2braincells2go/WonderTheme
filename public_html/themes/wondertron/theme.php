@@ -34,20 +34,13 @@ Include ('php/functions.php');
 .jumbotron {
 	background: url('<?php echo $coverPath."cv_".$c['page'].".jpg"; ?>'); 
 	<?php if($c['page']=='home') { ?>
-			height: 575px;
+		height: 85%;
 	<?php } else { ?>
+		height: 70%;
 	<?php }; ?>
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center bottom;
-	//background-attachment: fixed;
-}
-
-/* Medium Devices, Desktops */
-	@media only screen and (min-width : 768px) {
-	.jumbotron {
-		//background-position: center ;
-	}		
 }
 </style>
 

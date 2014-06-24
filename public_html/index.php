@@ -18,9 +18,6 @@ $c['subside'] = "<h3>ABOUT YOUR WEBSITE</h3><br />\nYour photo, website descript
 $c['description'] = 'Your website description.';
 $c['keywords'] = 'enter, your website, keywords';
 $c['copyright'] = '&copy;'. date('Y') .' Your website';
-
-include ('themes/jumbotron/default-content.php');
-
 $sig = "Powered by <a href='http://wondercms.com'>WonderCMS</a>";
 $hook['admin-richText'] = "rte.php";
 
@@ -65,6 +62,12 @@ foreach($c as $key => $val){
 	}
 }
 loadPlugins();
+
+# Load default content for theme, if any
+$themeContent = 'themes/'.$c['themeSelect'].'/default-content.php';
+if (file_exists($themeContent)) {
+	include ($themeContent);
+}
 
 require("themes/".$c['themeSelect']."/theme.php");
 
