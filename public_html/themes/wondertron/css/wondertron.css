@@ -98,7 +98,11 @@ body {
 	margin-top: 40px;
 	color: white;
 	border: none;
+	overflow: scroll;
+	height: 90%;
 }
+
+
 
 #jumbotron-content a {
 	color: white;
@@ -112,6 +116,7 @@ body {
 	}
 	#jumbotron-content {
 		margin-top: 100px;
+		height: auto;
 	}
 }
 
