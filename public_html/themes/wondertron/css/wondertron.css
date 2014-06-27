@@ -98,8 +98,8 @@ body {
 	margin-top: 40px;
 	color: white;
 	border: none;
-	overflow: scroll;
-	height: 90%;
+	overflow-y:  scroll;	
+	max-height: 90%;
 }
 
 
@@ -116,7 +116,8 @@ body {
 	}
 	#jumbotron-content {
 		margin-top: 100px;
-		height: auto;
+		max-height: 80%;
+		overflow-y: auto;
 	}
 }
 
