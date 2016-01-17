@@ -1,6 +1,9 @@
+# JANUARY 2016 -- NO LONGER MAINTAINED
+This project is no longer maintained. If you are interested in taking over ownership of this project, please submit your request as an issue and I will be happy to aid in the transfer.
+
 #What is Wondertron?
 
-Wondertron is a theme for [WonderCMS](http://www.wondercms.com) based on [Bootstrap 3](http://getbootstrap.com). It includes additional features, such as an AJAX contact form.
+Wondertron is a theme for [WonderCMS (v0.5)](http://www.wondercms.com) based on [Bootstrap 3](http://getbootstrap.com). It includes additional features, such as an AJAX contact form.
 
 #Demo
 Live demo is available at [http://cristoslc.com/portfolio/wondertron/public\_html](http://cristoslc.com/portfolio/wondertron/public_html).
