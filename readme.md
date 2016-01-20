@@ -1,5 +1,5 @@
-# JANUARY 2016 -- NO LONGER MAINTAINED
-This project is no longer maintained. If you are interested in taking over ownership of this project, please submit your request as an issue and I will be happy to aid in the transfer.
+# JANUARY 2016 -- New Life?
+This project is under review to see what we can do with it. The main focus will be for use in classroom/local intranet development.
 
 #What is Wondertron?
 
@@ -18,4 +18,4 @@ If you are installing `wondertron.zip` into your own WonderCMS installation (not
 
     include ('themes/wondertron/default-content.php');
 
-If you have any trouble, please open an issue on the github repo at [https://github.com/cristoslc/Wondertron/issues](https://github.com/cristoslc/Wondertron/issues)
+
