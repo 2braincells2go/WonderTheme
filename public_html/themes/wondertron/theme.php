@@ -167,7 +167,7 @@ Include ('php/functions.php');
 	$('#contactSubmit').click(function(e){
 		e.preventDefault(); 
 		submitContactForm('<?php echo $c['adminEmail']; ?>',
-			'<?php echo $themePath."/php/contact_me.php" ?>');
+			'<?php echo $themePath."php/contact_me.php" ?>');
 		});
 </script>
 
