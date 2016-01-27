@@ -16,8 +16,12 @@ To install this theme, just unzip `wondertron.zip` into your "themes" folder in 
 
 You can also download the `public_html` folder to the target directory of your site, which includes a WonderCMS (v0.6 BETA) installation. You can place all the files from the public_html folder into your root or subdirectory. Normally you will not have to change anything, just login and start playing. We are in NO WAY associated with WonderCMS and all issues with the CMS should be taken up with them.
 
-If you are installing `wondertron.zip` into your own WonderCMS installation (not using the `public_html` folder included here), you will need to make one modification to your index.php file. Around line 22, add:
+!!!IMPORTANT:!!! If you are installing `wondertron.zip` into your own WonderCMS installation (not using the `public_html` folder included here), you MUST make one modification to your index.php file. Around line 22-24, add:
 
     include ('themes/wondertron/default-content.php');
+    
+The above line should be entered right under:
+
+# Load default content for theme, if any
 
 
