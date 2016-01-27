@@ -1,9 +1,11 @@
 # JANUARY 2016 -- New Life?
-This project is under review to see what we can do with it. The main focus will be for use in classroom/local intranet development.
+The main focus will be for use in classroom/local intranet development but should work on most current webservers.
 
-#What is Wondertron?
+Why not fork it and help make better! Looking for those that wish to implement other WYSISWYG editors such as Ckeditor (w/filemanger) or similar.
 
-Wondertron is a theme for [WonderCMS (v0.6 BETA)](http://www.wondercms.com) based on [Bootstrap 3](http://getbootstrap.com). It includes additional features, such as an AJAX contact form.
+#What is WonderTheme?
+
+Wondertheme is a special theme for [WonderCMS (v0.6 BETA)](http://www.wondercms.com) based on [Bootstrap 3](http://getbootstrap.com). It includes additional features, such as an AJAX contact form.
 
 #Demo
 Live demo is available at [http://cristoslc.com/portfolio/wondertron/public\_html](http://cristoslc.com/portfolio/wondertron/public_html).
