@@ -46,18 +46,23 @@
 <h1>
 <a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h1>
 
-<p>Live demo is available at <a href="http://wondertheme.ml">http://wondertheme.ml</a>.</p>
+<p>Live demo is available at <a href="wondertheme.ml">http://wondertheme.ml</a>.</p>
 
 <h1>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h1>
 
 <p>To install this theme, just unzip <code>wondertron.zip</code> into your "themes" folder in WonderCMS. (It should automatically expand into a folder called 'wondertron').</p>
 
-<p>You can also download the <code>public_html</code> folder to the target directory of your site, which includes a WonderCMS (v0.6 BETA) installation.</p>
+<p>You can also download the <code>public_html</code> folder to the target directory of your site, which includes a WonderCMS (v0.6 BETA) installation. You can place all the files from the public_html folder into your root or subdirectory. Normally you will not have to change anything, just login and start playing. We are in NO WAY associated with WonderCMS and all issues with the CMS should be taken up with them.</p>
 
-<p>If you are installing <code>wondertron.zip</code> into your own WonderCMS installation (not using the <code>public_html</code> folder included here), you will need to make one modification to your index.php file. Around line 22, add:</p>
+<p>!!!IMPORTANT:!!! If you are installing <code>wondertron.zip</code> into your own WonderCMS installation (not using the <code>public_html</code> folder included here), you MUST make one modification to your index.php file. Around line 22-24, add:</p>
 
 <pre><code>include ('themes/wondertron/default-content.php');
+</code></pre>
+
+<p>The above line should be entered right under:</p>
+
+<pre><code># Load default content for theme, if any
 </code></pre>
         </section>
 
