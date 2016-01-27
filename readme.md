@@ -8,7 +8,7 @@ Why not fork it and help make better! Looking for those that wish to implement o
 Wondertheme is a special theme for [WonderCMS (v0.6 BETA)](http://www.wondercms.com) based on [Bootstrap 3](http://getbootstrap.com). It includes additional features, such as an AJAX contact form.
 
 #Demo
-Live demo is available at [http://wondertheme.ml](wondertheme.ml).
+Live demo is available at [http://wondertheme.ml](http://wondertheme.ml).
 
 #Installation
 
