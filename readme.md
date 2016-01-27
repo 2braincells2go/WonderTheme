@@ -22,6 +22,6 @@ You can also download the `public_html` folder to the target directory of your s
     
 The above line should be entered right under:
 
-# Load default content for theme, if any
+    # Load default content for theme, if any
 
 
