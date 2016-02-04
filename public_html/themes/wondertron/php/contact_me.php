@@ -12,7 +12,7 @@ if($_POST)
         $output = json_encode(
         array(
             'type'=>'error', 
-            'text' => '<div class="alert alert-danger">Request must come from Ajax</div>'
+            'text' => '<div class="alert alert-danger">Request MUST come from Ajax Call</div>'
         ));
         
         die($output);
