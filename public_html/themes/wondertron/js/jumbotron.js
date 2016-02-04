@@ -26,7 +26,7 @@ function setActiveNav(pageName) {
 
 function submitContactForm(adminEmail, postPage) {
 
-	//get input field values
+	//get input field value
 	var user_name       = $('#contactName').val(); 
 	var user_info     = $('#contactInfo').val();
 	var user_message    = $('#contactMessage').val();
