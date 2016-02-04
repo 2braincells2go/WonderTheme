@@ -1,8 +1,6 @@
-.navbar-brand {
-	display: none;
-}
 
 .jumbotron {
+	overflow:visible; //let content overflow
 }
 
 #jumbotron-content {
@@ -11,7 +9,7 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 900px) {
 	#homePanel { 
 		display: inherit;
 	}

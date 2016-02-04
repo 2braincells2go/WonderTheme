@@ -3,6 +3,7 @@
 * GitHub - https://github.com/2braincells2go/WonderTheme
 -->
 <?php
+ini_set('display_errors','off');
 $themePath = "themes/".$c['themeSelect']."/";
 $coverPath = $themePath."images/covers/";
 $tnPath = $themePath."images/thumbnails/";
@@ -10,6 +11,7 @@ $tnPath = $themePath."images/thumbnails/";
 Include ('php/functions.php');
 
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -24,9 +26,12 @@ Include ('php/functions.php');
 	<script src='".$themePath."js/jumbotron.js'></script>
 	<link rel='stylesheet' href='".$themePath."css/wondercms.css'>
 	<link rel='stylesheet' href='".$themePath."css/bootstrap.css'>
+	<!--
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+	-->
 	<link rel='stylesheet' href='".$themePath."css/wondertron.css'>
 	<link rel='stylesheet' href='".$themePath."css/your-site-overrides.css'>
-	<link rel='stylesheet' href='".$themePath."css/".$c['page'].".css'>
+	<link rel='stylesheet' href='".$themePath."css/home.css'>
 	<meta name='description' content='".$c['description']."'>
 	<meta name='keywords' content='".$c['keywords']."'>";
 	editTags();
@@ -57,7 +62,7 @@ Include ('php/functions.php');
 		<div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle Navigation</span>
+					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -79,9 +84,16 @@ Include ('php/functions.php');
 	</div>
 	<!-- Main jumbotron for a primary marketing message or call to action -->	
 		<div class="jumbotron">
+		
+	<div class="container">
+    <div class="row">
+	<div class="col-lg-12">
+	
 			<div class="well" id="jumbotron-content">
 				<?php content('jumbotron',$c['jumbotron']);?>
 			</div>
+			
+	</div></div></div>
 		</div>
 	
 	<div id="homePanel" class="container-fluid">
