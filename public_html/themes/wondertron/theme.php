@@ -147,7 +147,7 @@ Include ('php/functions.php');
 				</ul>
 				<ul class="col-md-offset-5 col-md-3 footer-right">
 					<li><?php echo "$sig"; ?></li>
-					<li>Theme by <a href="http://cristoslc.com" target="_blank">Cristos L-C</a></li>
+					<li>Theme by <a href="http://wondertheme.ml/" target="_blank">WonderTheme</a></li>
 				</ul>
 			</div>
 		</footer>
