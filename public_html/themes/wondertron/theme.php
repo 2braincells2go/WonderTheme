@@ -150,7 +150,11 @@ Include ('php/functions.php');
 				</ul>
 				<ul class="col-md-offset-5 col-md-3 footer-right">
 					<li><?php echo "$sig"; ?></li>
+<<<<<<< HEAD
 					<li>Theme by <a href="http://wondertheme.ml" target="_blank">WonderTheme</a></li>
+=======
+					<li>Theme by <a href="http://wondertheme.ml/" target="_blank">WonderTheme</a></li>
+>>>>>>> origin/master
 				</ul>
 			</div>
 		</footer>
