@@ -1,3 +1,7 @@
+<!--
+* Theme by WonderTheme
+* GitHub - https://github.com/2braincells2go/WonderTheme
+-->
 <?php
 $themePath = "themes/".$c['themeSelect']."/";
 $coverPath = $themePath."images/covers/";
@@ -6,7 +10,6 @@ $tnPath = $themePath."images/thumbnails/";
 Include ('php/functions.php');
 
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -54,7 +57,7 @@ Include ('php/functions.php');
 		<div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
+					<span class="sr-only">Toggle Navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -147,7 +150,7 @@ Include ('php/functions.php');
 				</ul>
 				<ul class="col-md-offset-5 col-md-3 footer-right">
 					<li><?php echo "$sig"; ?></li>
-					<li>Theme by <a href="http://cristoslc.com" target="_blank">Cristos L-C</a></li>
+					<li>Theme by <a href="http://wondertheme.ml" target="_blank">WonderTheme</a></li>
 				</ul>
 			</div>
 		</footer>
