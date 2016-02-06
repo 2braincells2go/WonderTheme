@@ -11,7 +11,7 @@ $content = trim(rtrim(stripslashes($_REQUEST['content'])));
 
 $file = @fopen("files/$fieldname", "w");
 if(!$file){
-	echo "Editing failed. Set correct permissions (755) to the 'files' folder.";
+	echo "Editing failed. Set correct permissions (755 recommended) to the 'files' folder.";
 	exit;
 }
 
