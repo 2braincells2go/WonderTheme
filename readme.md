@@ -1,4 +1,4 @@
-# JANUARY 2016 -- New Life?
+# JANUARY 2016 -- New direction and active dev...
 The main focus will be for use in classroom/local intranet development but should work on most current webservers.
 
 Why not fork it and help make better! Looking for those that wish to implement other WYSISWYG editors such as Ckeditor (w/filemanger) or similar.
